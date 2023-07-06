@@ -12,7 +12,7 @@ selecionada a opção de finalização.
 
 using namespace std;
 
-int main ()
+int main()
 {
   int op;
   float n1 = 0.0f;
@@ -25,8 +25,10 @@ int main ()
   cout << "Escolha uma opcao: ";
   cin >> op;
 
-  for(op; op != 5;){
-    switch (op){
+  for (; op != 5;)
+  {
+    switch (op)
+    {
     case 1:
       cout << "Insira o tamanho da base: ";
       cin >> n1;
@@ -38,19 +40,22 @@ int main ()
       cout << "Realizar outra operacao?\n1 - Sim.\n2 - Nao.\n3 - Menu.\n";
       cin >> aux;
 
-      if (aux == 2){
+      if (aux == 2)
+      {
         return 0;
       }
-      else if (aux == 3){
+      else if (aux == 3)
+      {
         cout << "\n\n";
         return main();
       }
-      else if (aux != 1 && aux != 2 && aux != 3){
+      else if (aux != 1 && aux != 2 && aux != 3)
+      {
         cout << "Valor invalido! Retornando ao menu.\n\n";
         system("pause");
         return main();
       }
-    break;
+      break;
     case 2:
       cout << "Insira o tamanho da base: ";
       cin >> n1;
@@ -58,23 +63,26 @@ int main ()
       cin >> n2;
       area = n1 * n2;
       cout << "\nA area do quadrado e: " << area << "." << endl;
-      
+
       cout << "Realizar outra operacao?\n1 - Sim.\n2 - Nao.\n3 - Menu.\n";
       cin >> aux;
 
-      if (aux == 2){
+      if (aux == 2)
+      {
         return 0;
       }
-      else if (aux == 3){
+      else if (aux == 3)
+      {
         cout << "\n\n";
         return main();
       }
-      else if (aux != 1 && aux != 2 && aux != 3){
+      else if (aux != 1 && aux != 2 && aux != 3)
+      {
         cout << "Valor invalido! Retornando ao menu.\n\n";
         system("pause");
         return main();
       }
-    break;
+      break;
     case 3:
       cout << "Insira o tamanho da base: ";
       cin >> n1;
@@ -82,23 +90,26 @@ int main ()
       cin >> n2;
       area = n1 * n2;
       cout << "\nA area do retangulo e: " << area << "." << endl;
-      
+
       cout << "Realizar outra operacao?\n1 - Sim.\n2 - Nao.\n3 - Menu.\n";
       cin >> aux;
 
-      if (aux == 2){
+      if (aux == 2)
+      {
         return 0;
       }
-      else if (aux == 3){
+      else if (aux == 3)
+      {
         cout << "\n\n";
         return main();
       }
-      else if (aux != 1 && aux != 2 && aux != 3){
+      else if (aux != 1 && aux != 2 && aux != 3)
+      {
         cout << "Valor invalido! Retornando ao menu.\n\n";
         system("pause");
         return main();
       }
-    break;
+      break;
     case 4:
       cout << "Insira o tamanho do raio: ";
       cin >> n1;
@@ -106,26 +117,29 @@ int main ()
       cin >> n2;
       area = n2 * (n1 * n1);
       cout << "\nA area do triangulo e: " << area << "." << endl;
-      
+
       cout << "Realizar outra operacao?\n1 - Sim.\n2 - Nao.\n3 - Menu.\n";
       cin >> aux;
 
-      if (aux == 2){
+      if (aux == 2)
+      {
         return 0;
       }
-      else if (aux == 3){
+      else if (aux == 3)
+      {
         cout << "\n\n";
         return main();
       }
-      else if (aux != 1 && aux != 2 && aux != 3){
+      else if (aux != 1 && aux != 2 && aux != 3)
+      {
         cout << "Valor invalido! Retornando ao menu.\n\n";
         system("pause");
         return main();
       }
-    break;
+      break;
     case 5:
 
-    break;
+      break;
 
     default:
       cout << "Numero invalido! Escolha uma das opcoes." << endl;
