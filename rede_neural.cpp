@@ -18,7 +18,7 @@ double cossenoDenominador1 = 0;
 double cossenoDenominador2 = 0;
 double qualidade = 0;
 
-//Memoriza uma tabela de 10 rostos
+//Memoriza a tabela de rostos
 void aprender(){
   for (int i = 0; i < 4; i++){
     for (int j = 0; j < 4; j++){
